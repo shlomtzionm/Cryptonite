@@ -117,14 +117,14 @@ body {
     color: #555555;
 }
 
- button#loudMore{
+ button#loadMore{
     margin: auto ;
 }
 
 .btn,
 .saveChanges,
 .UndoChanges ,
-#loudMore{
+#loadMore{
     background-color: #809d81;
     color: #ffffff;
     border: none;
