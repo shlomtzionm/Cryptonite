@@ -1,0 +1,366 @@
+body {
+    background-image: url(https://img.freepik.com/free-photo/white-blank-background-texture-design-element_53876-121611.jpg?w=996&t=st=1712680944~exp=1712681544~hmac=246cb83be05ef84a776a6076d26344574178258ca43bd528703add29581711c1);
+}
+
+#navBar {
+    border-bottom: 1px solid black;
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row-reverse;
+    background-color: #8aaca1; /* Example background color */
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.header {
+    display: flex;
+    height: 50px;
+    width: 100px;
+    align-items: center;
+    margin-left: 55px;
+
+}
+
+#coinImage {
+    width: 50px;
+    height: 50px;
+    padding-top: 17px;
+}
+
+#cardContainer {
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 900px;
+    justify-content: center;
+}
+
+.btn-primary {
+    margin: 0px 0px 10px 15px;
+}
+
+.img {
+    width: 100;
+    height: 100px;
+}
+
+.tabs {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.nav-item {
+    margin-right: 30px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.nav-item input {
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: transparent;
+    height: 30px;
+}
+
+.nav-item button {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 30px;
+}
+
+.nav-item button:hover {
+    background-color: #ffffff78;
+}
+
+.myCard {
+    background-color: #55555518;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.279);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    margin-left: 1px;
+    justify-content: space-between
+}
+
+.MY-card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.MY-card-text {
+    margin-left: -15px;
+    width: 150px;
+    font-size: 1rem;
+    color: #555555;
+}
+
+ button#loudMore{
+    margin: auto ;
+}
+
+.btn,
+.saveChanges,
+.UndoChanges ,
+#loudMore{
+    background-color: #809d81;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.btn:hover ,
+.saveChanges:hover,
+.UndoChanges:hover{
+    background-color: #8fb4a5;
+}
+
+#about, #liveReports {
+    display: none;
+}
+
+
+
+#myPic {
+    display: block;
+    width: 250px;
+    height: 320px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#flexContainer {
+  
+    margin: 0px auto;
+    height: 500px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#aboutInfo {
+    margin-top: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.325);
+    width: 250px;
+    height: fit-content;
+    padding-left: 20px;
+    display: inline-block;
+    white-space: normal;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 120px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #979797;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #383838;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.spinner-border{
+    display: block;
+    margin: auto;
+}
+
+.spinner-border{
+    display: none;
+}
+
+.welcome{
+    background-color: white;
+    color: #000000;
+   
+    text-align: center;
+    margin-top: 100px;
+}
+
+.parallax {
+    /* Your existing parallax styles */
+    /* Add additional styles to control the scrolling speed */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 180%;  
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+
+ 
+    .welcome{
+        display: none;
+    }
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navBar {
+        flex-direction: column-reverse;
+        height: 250px;
+        margin-top: 25px;
+        color: black;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #cardContainer{
+        width: 100%;
+    }
+    #flexContainer{
+        margin: auto;
+        flex-direction:row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .welcome{
+        display: none;
+    }
+    #navBar {
+        flex-direction: column-reverse;
+        height: 150px;
+    }
+
+    .tabs {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .search {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    #cardContainer{
+        width: 100%;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+}
+
+#myModal {
+    z-index: 1000; /* Adjust as needed */
+}
+
+.modalToggle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.saveChanges,
+.UndoChanges{
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+
